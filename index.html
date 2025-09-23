@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مكتب المحامي صادق البخيتي — محاماة واستشارات قانونية | صنعاء</title>
+  <meta name="description" content="مكتب المحامي صادق البخيتي — خدمات محاماة، قضايا مدنية وتجارية، استشارات قانونية في صنعاء، اليمن. تواصل مباشر عبر الهاتف والواتساب." />
+  <meta name="keywords" content="محاماة, محامي, استشارات قانونية, صنعاء, اليمن, قضايا تجارية, قضايا مدنية, دفاع جنائي, تحكيم, المحامي صادق البخيتي" />
+  <meta name="theme-color" content="#001f3f" />
+
+  <style>
+  :root{
+    --beige:#f5f5dc;
+    --black:#000000;
+    --navy:#001f3f;
+    --muted:#444;
+    --container:1100px;
+    --header-height:62px;
+  }
+  *{box-sizing:border-box;font-family:"Noto Naskh Arabic",Arial,sans-serif;}
+  body{margin:0;color:var(--black);background:var(--beige);line-height:1.6}
+  .container{max-width:var(--container);margin:0 auto;padding:24px}
+  .site-header{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid rgba(0,0,0,0.1);z-index:100}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;height:var(--header-height)}
+  .site-header.small{height:54px}
+  .brand{font-weight:700;color:var(--navy);text-decoration:none;font-size:18px}
+  .nav{display:flex;gap:12px}
+  .nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+  .nav a:hover{color:var(--black);background:rgba(0,0,0,0.05)}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+  .burger span{display:block;width:22px;height:2px;background:var(--black);margin:4px 0;border-radius:2px}
+  .contact-quick a{margin-left:8px}
+  .call{background:var(--navy);color:#fff;padding:6px 10px;border-radius:6px;text-decoration:none;font-weight:600}
+  .whatsapp{background:#25D366;color:#fff;padding:6px 10px;border-radius:6px;text-decoration:none;font-weight:600}
+  .hero{padding-top:90px;padding-bottom:30px}
+  .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+  .hero h1{margin:0;font-size:30px;color:var(--navy)}
+  .accent{color:var(--navy)}
+  .lead{color:var(--muted)}
+  .quote{font-style:italic;color:var(--black);margin:12px 0}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;cursor:pointer;border:0}
+  .btn.primary{background:var(--black);color:#fff}
+  .btn.secondary{background:transparent;border:1px solid var(--black);color:var(--black)}
+  .stats{display:flex;gap:20px;justify-content:center;padding:10px 0;color:var(--muted)}
+  .features{display:flex;gap:12px;margin-top:14px}
+  .card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);flex:1}
+  .services-list{columns:2;gap:18px}
+  .articles article{background:#fff;padding:12px;border-radius:8px;margin-bottom:10px}
+  .rules ul{list-style:disc;margin-left:20px}
+  .cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .contact-form label{display:block;margin-bottom:10px}
+  .contact-form input,.contact-form textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
+  .site-footer{padding:20px 0;background:#fff;color:var(--muted);margin-top:20px;text-align:center}
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .nav{display:none;position:fixed;right:0;top:54px;background:#fff;padding:12px;flex-direction:column;height:calc(100vh - 54px);width:220px}
+    .burger{display:block}
+  }
+  </style>
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a class="brand" href="#">المحامي صادق البخيتي</a>
+      <nav class="nav" id="mainNav">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن المكتب</a>
+        <a href="#services">الخدمات</a>
+        <a href="#articles">مقالات</a>
+        <a href="#rules">قواعد قضائية</a>
+        <a href="#cv">السيرة الذاتية</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+      <div class="contact-quick">
+        <a class="call" href="tel:+96777298292">📞 اتصال</a>
+        <a class="whatsapp" href="https://wa.me/96777298292" target="_blank">💬 واتساب</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>مكتب المحامي <span class="accent">صادق البخيتي</span></h1>
+          <p class="lead">دفاع وتمثيل قانوني محترف — قضايا مدنية، تجارية، جنائية وتحكيم.</p>
+          <p class="quote">“الشجاعة ليست غياب الخوف، بل القرار بأن شيء آخر أهم من الخوف.”</p>
+          <a class="btn primary" href="#contact">تواصل الآن</a>
+        </div>
+        <div class="hero-image">
+          <img alt="محاماة واستشارات قانونية" src="https://images.unsplash.com/photo-1581092795365-196e2f2d3a3f?w=900&q=80" />
+        </div>
+      </div>
+      <div class="stats">
+        <div>زوار سابقون: <span id="visitorCount">2,000,000</span></div>
+        <div>تقييم العملاء: ★★★★★</div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>عن المكتب</h2>
+      <p>مكتب المحامي صادق البخيتي مختص في القضايا المدنية والتجارية والجنائية والتحكيم. يقع في <strong>صنعاء - جولة آية</strong> ويقدم خدمات استشارية وتمثيل قضائي محترف.</p>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>خدماتنا</h2>
+      <ul class="services-list">
+        <li>قضايا مدنية وتعويضات</li>
+        <li>قضايا تجارية وعقود</li>
+        <li>دفاع جنائي</li>
+        <li>إجراءات تنفيذ وتحصيل</li>
+        <li>تحكيم وتسوية منازعات</li>
+        <li>صياغة عقود واستشارات الشركات</li>
+      </ul>
+    </section>
+
+    <section id="articles" class="container articles">
+      <h2>مقالات قانونية قصيرة</h2>
+      <article>
+        <h3>أهمية الصياغة السليمة للعقود</h3>
+        <p>تقلل الصياغة الدقيقة من المخاطر القانونية وتحد من النزاعات؛ احرص على تضمين بنود واضحة للمدة، القيمة، وآليات التسوية.</p>
+      </article>
+      <article>
+        <h3>حقوق المتهم في الإجراءات الجنائية</h3>
+        <p>لكل متهم الحق في محاكمة عادلة، الدفاع، والاطلاع على الأدلة. تأمين تمثيل قانوني مبكر يحسن فرص الدفاع.</p>
+      </article>
+    </section>
+
+    <section id="rules" class="container rules">
+      <h2>قواعد قضائية قصيرة</h2>
+      <ul>
+        <li>المبدأ: من أثبت ادعاءه فهو أحق بالحكم.</li>
+        <li>قواعد الإثبات: يُحتسب إثبات الشهادة والعقود والسندات الرسمية.</li>
+        <li>التقادم: راقب مدد التقادم القانونية قبل فوات الأوان.</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="container cv">
+      <h2>السيرة الذاتية — المحامي صادق البخيتي</h2>
+      <div class="cv-grid">
+        <div>
+          <h3>الخبرات</h3>
+          <ul>
+            <li>10 سنوات تمثيل قانوني في القضايا المدنية والتجارية.</li>
+            <li>تمثيل عملاء في قضايا تنفيذ وتحصيل مطالبات.</li>
+            <li>مشارك في جلسات تحكيم محلية وإقليمية.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>الشهادات والمؤهلات</h3>
+          <ul>
+            <li>بكالوريوس قانون، جامعة صنعاء.</li>
+            <li>دورات تخصصية في قانون الشركات والتحكيم.</li>
+            <li>رخصة مزاولة المحاماة وسجل لدى نقابة المحامين.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>اتصل بالمكتب</h2>
+      <p>العنوان: اليمن، صنعاء، جولة آية</p>
+      <p>الهاتف: <a href="tel:+96777298292">+967 772 982 92</a></p>
+      <p>واتساب: <a href="https://wa.me/96777298292" target="_blank">اضغط هنا للتواصل عبر واتساب</a></p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> مكتب المحامي صادق البخيتي — صنعاء. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  document.getElementById('year').innerText = new Date().getFullYear();
+  const burger=document.getElementById('burger');
+  const nav=document.getElementById('mainNav');
+  burger.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';});
+  (function(){
+    const el=document.getElementById('visitorCount');
+    const key='visitorCount';
+    const start=2000000;
+    let val=parseInt(localStorage.getItem(key)||start);
+    val++;
+    localStorage.setItem(key,val);
+    el.innerText=val.toLocaleString('en-US');
+  })();
+  </script>
+</body>
+</html>
