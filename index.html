@@ -1,194 +1,650 @@
-<!doctype html>
-<html lang="ar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>مكتب المحامي صادق البخيتي — محاماة واستشارات قانونية | صنعاء</title>
-  <meta name="description" content="مكتب المحامي صادق البخيتي — خدمات محاماة، قضايا مدنية وتجارية، استشارات قانونية في صنعاء، اليمن. تواصل مباشر عبر الهاتف والواتساب." />
-  <meta name="keywords" content="محاماة, محامي, استشارات قانونية, صنعاء, اليمن, قضايا تجارية, قضايا مدنية, دفاع جنائي, تحكيم, المحامي صادق البخيتي" />
-  <meta name="theme-color" content="#001f3f" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب المحامي صادق البخيتي | للمحاماة والاستشارات القانونية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  <!-- كود التحقق من Google Search Console -->
-  <meta name="google-site-verification" content="E5wBNlL6rsmHMYVU9p4V57BbQXkY0LCIi0DYuVF8DCo" />
-  <style>
-    :root {
-      --beige:#f5f5dc;
-      --black:#000000;
-      --navy:#001f3f;
-      --muted:#444;
-      --container:1100px;
-      --header-height:62px;
-    }
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #e6af2e;
+            --accent-color: #2d3748;
+            --light-color: #f8f9fa;
+            --dark-color: #2d3748;
+            --text-color: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    *{box-sizing:border-box;font-family:"Noto Naskh Arabic",Arial,sans-serif;}
-    body{margin:0;color:var(--black);background:var(--beige);line-height:1.6}
-    .container{max-width:var(--container);margin:0 auto;padding:24px}
-    .site-header{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid rgba(0,0,0,0.1);z-index:100}
-    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;height:var(--header-height)}
-    .site-header.small{height:54px}
-    .brand{font-weight:700;color:var(--navy);text-decoration:none;font-size:18px}
-    .nav{display:flex;gap:12px}
-    .nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
-    .nav a:hover{color:var(--black);background:rgba(0,0,0,0.05)}
-    .burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
-    .burger span{display:block;width:22px;height:2px;background:var(--black);margin:4px 0;border-radius:2px}
-    .contact-quick a{margin-left:8px}
-    .call{background:var(--navy);color:#fff;padding:6px 10px;border-radius:6px;text-decoration:none;font-weight:600}
-    .whatsapp{background:#25D366;color:#fff;padding:6px 10px;border-radius:6px;text-decoration:none;font-weight:600}
-    .hero{padding-top:90px;padding-bottom:30px}
-    .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
-    .hero h1{margin:0;font-size:30px;color:var(--navy)}
-    .accent{color:var(--navy)}
-    .lead{color:var(--muted)}
-    .quote{font-style:italic;color:var(--black);margin:12px 0}
-    .btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;cursor:pointer;border:0}
-    .btn.primary{background:var(--black);color:#fff}
-    .btn.secondary{background:transparent;border:1px solid var(--black);color:var(--black)}
-    .stats{display:flex;gap:20px;justify-content:center;padding:10px 0;color:var(--muted)}
-    .features{display:flex;gap:12px;margin-top:14px}
-    .card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);flex:1}
-    .services-list{columns:2;gap:18px}
-    .articles article{background:#fff;padding:12px;border-radius:8px;margin-bottom:10px}
-    .rules ul{list-style:disc;margin-left:20px}
-    .cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .contact-form label{display:block;margin-bottom:10px}
-    .contact-form input,.contact-form textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
-    .site-footer{padding:20px 0;background:#fff;color:var(--muted);margin-top:20px;text-align:center}
-    @media(max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      .nav{display:none;position:fixed;right:0;top:54px;background:#fff;padding:12px;flex-direction:column;height:calc(100vh - 54px);width:220px}
-      .burger{display:block}
-    }
-  </style>
+        body {
+            background-color: #f5f5f5;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10rem 0 5rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 2rem 0;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d4a42c;
+            transform: translateY(-3px);
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 1rem;
+            padding: 1.5rem;
+            background-color: var(--light-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-item i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background-color: var(--light-color);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 0.5rem auto;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--light-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Consultation Section */
+        .consultation {
+            padding: 5rem 0;
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .consultation-form {
+            background-color: white;
+            color: var(--text-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Articles Section */
+        .articles {
+            padding: 5rem 0;
+            background-color: var(--light-color);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .article-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.1);
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .article-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-left: 1rem;
+        }
+
+        .map {
+            margin-top: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            margin-top: 0.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .mobile-menu {
+                display: block;
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .stats-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header small">
-    <div class="container header-inner">
-      <a class="brand" href="#">المحامي صادق البخيتي</a>
-      <nav class="nav" id="mainNav">
-        <a href="#home">الرئيسية</a>
-        <a href="#about">عن المكتب</a>
-        <a href="#services">الخدمات</a>
-        <a href="#articles">مقالات</a>
-        <a href="#rules">قواعد قضائية</a>
-        <a href="#cv">السيرة الذاتية</a>
-        <a href="#contact">اتصل بنا</a>
-      </nav>
-      <button class="burger" id="burger"><span></span><span></span><span></span></button>
-      <div class="contact-quick">
-        <a class="call" href="tel:+96777298292">📞 اتصال</a>
-        <a class="whatsapp" href="https://wa.me/96777298292" target="_blank">💬 واتساب</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>مكتب المحامي <span class="accent">صادق البخيتي</span></h1>
-          <p class="lead">دفاع وتمثيل قانوني محترف — قضايا مدنية، تجارية، جنائية وتحكيم.</p>
-          <p class="quote">“الشجاعة ليست غياب الخوف، بل القرار بأن شيء آخر أهم من الخوف.”</p>
-          <a class="btn primary" href="#contact">تواصل الآن</a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>مكتب المحامي <span>صادق البخيتي</span></h1>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عن المكتب</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#consultation">الاستشارات</a></li>
+                        <li><a href="#articles">المقالات</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="hero-image">
-          <img alt="محاماة واستشارات قانونية" src="https://images.unsplash.com/photo-1581092795365-196e2f2d3a3f?w=900&q=80" />
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>مكتب المحامي صادق البخيتي</h2>
+            <h3>للمحاماة والاستشارات القانونية</h3>
+            <p class="quote">"العدالة ليست مجاملة، إنها حق"</p>
+            <p>نحن هنا لنقف معك في رحلة البحث عن العدالة، بخبرة واسعة وتفان في خدمة موكلينا. مكتبنا متخصص في جميع أنواع القضايا القانونية مع تقديم استشارات مجانية لخدمة المجتمع.</p>
+            <a href="#consultation" class="btn">تواصل معنا الآن</a>
+            <a href="#consultation" class="btn" style="background-color: white; color: var(--primary-color); margin-right: 1rem;">استشارة مجانية</a>
         </div>
-      </div>
-      <div class="stats">
-        <div>زوار سابقون: <span id="visitorCount">2,000,000</span></div>
-        <div>تقييم العملاء: ★★★★★</div>
-      </div>
     </section>
 
-    <section id="about" class="container about">
-      <h2>عن المكتب</h2>
-      <p>مكتب المحامي صادق البخيتي مختص في القضايا المدنية والتجارية والجنائية والتحكيم. يقع في <strong>صنعاء - جولة آية</strong> ويقدم خدمات استشارية وتمثيل قضائي محترف.</p>
-    </section>
-
-    <section id="services" class="container services">
-      <h2>خدماتنا</h2>
-      <ul class="services-list">
-        <li>قضايا مدنية وتعويضات</li>
-        <li>قضايا تجارية وعقود</li>
-        <li>دفاع جنائي</li>
-        <li>إجراءات تنفيذ وتحصيل</li>
-        <li>تحكيم وتسوية منازعات</li>
-        <li>صياغة عقود واستشارات الشركات</li>
-      </ul>
-    </section>
-
-    <section id="articles" class="container articles">
-      <h2>مقالات قانونية قصيرة</h2>
-      <article>
-        <h3>أهمية الصياغة السليمة للعقود</h3>
-        <p>تقلل الصياغة الدقيقة من المخاطر القانونية وتحد من النزاعات؛ احرص على تضمين بنود واضحة للمدة، القيمة، وآليات التسوية.</p>
-      </article>
-      <article>
-        <h3>حقوق المتهم في الإجراءات الجنائية</h3>
-        <p>لكل متهم الحق في محاكمة عادلة، الدفاع، والاطلاع على الأدلة. تأمين تمثيل قانوني مبكر يحسن فرص الدفاع.</p>
-      </article>
-    </section>
-
-    <section id="rules" class="container rules">
-      <h2>قواعد قضائية قصيرة</h2>
-      <ul>
-        <li>المبدأ: من أثبت ادعاءه فهو أحق بالحكم.</li>
-        <li>قواعد الإثبات: يُحتسب إثبات الشهادة والعقود والسندات الرسمية.</li>
-        <li>التقادم: راقب مدد التقادم القانونية قبل فوات الأوان.</li>
-      </ul>
-    </section>
-
-    <section id="cv" class="container cv">
-      <h2>السيرة الذاتية — المحامي صادق البخيتي</h2>
-      <div class="cv-grid">
-        <div>
-          <h3>الخبرات</h3>
-          <ul>
-            <li>10 سنوات تمثيل قانوني في القضايا المدنية والتجارية.</li>
-            <li>تمثيل عملاء في قضايا تنفيذ وتحصيل مطالبات.</li>
-            <li>مشارك في جلسات تحكيم محلية وإقليمية.</li>
-          </ul>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-gavel"></i>
+                    <h3>15+</h3>
+                    <p>سنة خبرة</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>500+</h3>
+                    <p>قضية ناجحة</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>خبرة واسعة</h3>
+                    <p>مترافع في جميع محاكم الجمهورية</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-comments"></i>
+                    <h3>استشارات مجانية</h3>
+                    <p>لخدمة المجتمع وتعزيز الوعي القانوني</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <h3>الشهادات والمؤهلات</h3>
-          <ul>
-            <li>بكالوريوس قانون، جامعة صنعاء.</li>
-            <li>دورات تخصصية في قانون الشركات والتحكيم.</li>
-            <li>رخصة مزاولة المحاماة وسجل لدى نقابة المحامين.</li>
-          </ul>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">عن المكتب</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>مكتب المحامي صادق البخيتي هو صرح قانوني متميز يقدم خدمات المحاماة والاستشارات القانونية بأعلى معايير الجودة والاحترافية، مع التزام راسخ بتحقيق العدالة وحماية حقوق الموكلين.</p>
+                    <h3>نبذة عن المحامي صادق البخيتي</h3>
+                    <p>يُعد المحامي صادق البخيتي من أبرز المحامين في الجمهورية اليمنية، حيث يتمتع بخبرة واسعة تمتد لأكثر من 15 عامًا في مجال المحاماة والاستشارات القانونية. تخرج من كلية الحقوق بجامعة صنعاء بمرتبة الشرف، وحصل على ترخيص مزاولة المهنة في جميع محاكم الجمهورية.</p>
+                    <p>يتميز المحامي صادق البخيتي بأسلوبه المهني الراقي وقدرته على التعامل مع أعقد القضايا القانونية، كما يحرص على تقديم أفضل الخدمات لموكليه مع الحفاظ على أعلى معايير السرية والمهنية.</p>
+                    <p>يؤمن المحامي صادق البخيتي بأهمية خدمة المجتمع، لذلك يقدم استشارات قانونية مجانية للمحتاجين، ويساهم في نشر الوعي القانوني من خلال المقالات والندوات التوعوية.</p>
+                    <p class="quote">"القانون وجد من أجل احترامه، ومن يفوه بالقانون عليه أن يكون أول من يحترمه" - المحامي صادق البخيتي</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="المحامي صادق البخيتي">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="container contact">
-      <h2>اتصل بالمكتب</h2>
-      <p>العنوان: اليمن، صنعاء، جولة آية</p>
-      <p>الهاتف: <a href="tel:+96777298292">+967 772 982 92</a></p>
-      <p>واتساب: <a href="https://wa.me/96777298292" target="_blank">اضغط هنا للتواصل عبر واتساب</a></p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا القانونية</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>القضايا المدنية</h3>
+                    <p>نتولى جميع أنواع القضايا المدنية بما في ذلك قضايا الديون، العقود، والتعويضات</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gavel"></i>
+                    <h3>القضايا الجنائية</h3>
+                    <p>دفاع قوي ومتخصص في جميع أنواع القضايا الجنائية مع ضمان حماية حقوق المتهمين</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>القضايا التجارية</h3>
+                    <p>خدمات قانونية متكاملة للشركات والأعمال التجارية مع فهم عميق لقوانين التجارة</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>الأحوال الشخصية</h3>
+                    <p>نتعامل بحساسية عالية مع قضايا الأسرة مع الحرص على المصالح العليا للأطفال</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>الدعاوي والمرافعات</h3>
+                    <p>إعداد وتقديم الدعاوي بأسلوب قانوني محكم مع متابعة دقيقة لجميع إجراءات التقاضي</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>الاستشارات القانونية</h3>
+                    <p>استشارات قانونية شاملة ومتخصصة مع تقديم استشارات مجانية لخدمة المجتمع</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> مكتب المحامي صادق البخيتي — صنعاء. جميع الحقوق محفوظة.</p>
-      </div>
-    </footer>
-  </main>
+    <!-- Consultation Section -->
+    <section class="consultation" id="consultation">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">احجز استشارتك المجانية الآن</h2>
+            <div class="consultation-form">
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="fullName">الاسم الكامل *</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" class="form-control" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف *</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="أدخل رقم هاتفك" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consultationType">نوع الاستشارة *</label>
+                        <select id="consultationType" class="form-control" required>
+                            <option value="">اختر نوع الاستشارة</option>
+                            <option value="هاتفية">استشارة هاتفية</option>
+                            <option value="شخصية">استشارة شخصية</option>
+                            <option value="مكتوبة">استشارة مكتوبة</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">تفاصيل الاستفسار *</label>
+                        <textarea id="details" class="form-control" rows="5" placeholder="اكتب تفاصيل استفسارك القانوني هنا..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">إرسال طلب الاستشارة</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <script>
-  document.getElementById('year').innerText = new Date().getFullYear();
-  const burger=document.getElementById('burger');
-  const nav=document.getElementById('mainNav');
-  burger.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';});
-  (function(){
-    const el=document.getElementById('visitorCount');
-    const key='visitorCount';
-    const start=2000000;
-    let val=parseInt(localStorage.getItem(key)||start);
-    val++;
-    localStorage.setItem(key,val);
-    el.innerText=val.toLocaleString('en-US');
-  })();
-  </script>
-</body>
-</html>
+    <!-- Articles Section -->
+    <section cla
